@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Adora Architects</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="/images/aa_icon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/aa_icon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--slides">
+
+        <div class="home-slider">
+            <div class="home-slider-img" style="background-image: url(images/slides/A1.jpg);"></div>
+            <div class="home-slider-img" style="background-image: url(images/slides/A2.jpg);"></div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="home-content">
+
+            <div class="home-logo">
+                <a href="#">
+                    <img src="images/aa-logo.png" alt="Homepage">
+                </a>
+            </div>
+
+            <div class="row home-content__main">
+
+                <div class="col-eight home-content__text pull-right">
+                    <h3>Welcome to Adora Architects</h3>
+
+                    <h1>
+                    We are currently working <br>
+                    on a new super awesome <br> website.
+                    </h1>
+
+                    <p>
+                        Adora Architects is a leading architectural firm in Thrissur, Kerala. With a focus on design excellence and sustainability, they offer a wide range of architectural services for residential, commercial, and institutional projects.
+                    </p>
+
+                    <div class="home-content__subscribe">
+                        <form id="mc-form" class="group" novalidate="true">
+                            <!-- <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required=""> -->
+                            <input type="submit" name="subscribe" id="whats-app" value="What's App us..">
+                            <!-- <label for="mc-email" class="subscribe-message"></label> -->
+                        </form>
+                    </div>
+                </div>  <!-- end home-content__text -->
+
+                <!-- <div class="col-four home-content__counter">
+                    <h3>Launching In</h3>
+
+                    <div class="home-content__clock">
+                        <div class="top">
+                            <div class="time days">
+                                325
+                                <span>Days</span>
+                            </div>
+                        </div>    
+                        <div class="time hours">
+                            09
+                            <span>H</span>
+                        </div>
+                        <div class="time minutes">
+                            54
+                            <span>M</span>
+                        </div>
+                        <div class="time seconds">
+                            30
+                            <span>S</span>
+                        </div>
+                    </div> 
+                </div>   -->
+                <!-- end home-content__counter -->
+
+            </div>  <!-- end home-content__main -->
+
+            <ul class="home-social">
+                <li>
+                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                </li>
+                <li>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                </li>
+                <li>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                </li>
+            </ul> <!-- end home-social -->
+
+            <div class="row home-copyright">
+                <span>Copyright &#169; Adora Architects 2023</span> 
+                <span>Designed by <a id="daniel">Daniel T Gilbert</a></span>
+            </div> <!-- end home-copyright -->
+
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+
+    
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script>
+        const whatsAppLink = document.getElementById("whats-app");
+        whatsAppLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            const externalPageURL = "https://api.whatsapp.com/send?text=Hello&phone=+919633682021/";
+            window.open(externalPageURL, "_blank");
+        });
+
+        const daniel = document.getElementById("daniel");
+        daniel.addEventListener("click", function(e) {
+            e.preventDefault();
+            const websiteLink = "https://www.danieltgilbert.com";
+            window.open(websiteLink, "_blank");
+        });
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
